@@ -1,7 +1,5 @@
 cars = ['bmw', 'honda', 'benz', 'ford', 'sdfasdf', '324234', '21343124']
 
-
-
 let add = (event) => {
     let newCar = document.getElementById("myInput").value
     cars.push(newCar)
@@ -23,18 +21,6 @@ let updateUi = () => {
     htmlVariable += '</ul>'
     document.querySelectorAll("#root")[0].innerHTML = htmlVariable;
 }
-
-document.addEventListener("DOMContentLoaded", updateUi());
-var c = 30;
-var d=90;
-
-
-
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", updateUi());
 
