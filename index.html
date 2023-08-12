@@ -2,35 +2,42 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/jquery.js"></script>
     <title>Page Title</title>
-    <style>
-        li::after{
-            content: 'Remove';
-
-        }
-        li:hover { 
-            background-color: red;
-            cursor: pointer;
-            font-size: 25px;
-            font-weight: bold;
-            margin: 15px;
-        }
-    </style>
 </head>
 
 <body>
-    <div style="display: flex;">
-        <div>
-            <input id="myInput" type="text">
-        </div>
-        <div>
-            <button onclick="add()">ADD</button>
-        </div>
+    <span class="btn btn-primary" company="busyqa1">btn1</span>
+    <div class="container">
+        <input type="text" class="form-control m-2" >
+        <div class="btn btn-secondary serach">search</div>
+        <div class="btn btn-primary" company="busyqa1">btn1</div>
+        <div class="btn btn-primary" company="busyqa2">btn2</div>
+        <div class="btn btn-primary" company="busyqa3">btn3</div>
     </div>
-    <div id="root"></div>
+
+
+    <div class="container parent mt-3">
+        <div class="btn btn-primary ch1">1</div>
+        <div class="btn btn-primary ch2">2</div>
+        <div class="btn btn-primary ch3">3</div>
+    </div>
+
+    <div class="container parent mt-3">
+        <div class="btn btn-primary fetchall">fetch all</div>
+        <input type="text" class="form-control m-2 userid" >
+        <div class="btn btn-primary fetchone">fetch one</div>
+        <table></table>
+    </div>
+
+
+
+
 </body>
 <footer>
-    <script src="./app.js"></script>
+    <script src="./jQuer.js"></script>
 </footer>
 
 </html>
